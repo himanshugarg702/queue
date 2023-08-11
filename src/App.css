@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .counters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
   }
-}
+  
+  .customer-triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 5px;
+  }
+  
+  /* .queue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  /* App.css */
+
+/* ... (Previous styles) */
+
+.queue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .queue-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .queue-customer {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+  }
+  
+  .queue-triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid #e74c3c;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Add more styles as needed */
+  /* App.css */
+
+/* ... (Previous styles) */
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .counters {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .counter {
+      width: 80%;
+    }
+  
+    .queue {
+      margin-top: 30px;
+    }
+  }
+/* App.css */
+
+/* ... (Previous styles) */
+
+.customer-triangle {
+    /* ... (Previous styles) */
+    border-bottom: 6vw solid #3498db;
+    font-size: 4vw;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .customer-triangle {
+      border-bottom: 8vw solid #3498db;
+      font-size: 6vw;
+    }
+  }
+/* App.css */
+
+/* ... (Previous styles) */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .queue-customer {
+      font-size: 14px;
+    }
+  
+    .queue-triangle {
+      border-top: 10px solid #e74c3c;
+      font-size: 10px;
+      margin-right: 5px;
+    }
+  }
+      
